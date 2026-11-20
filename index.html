@@ -160,6 +160,17 @@
   .side-panel ul{margin:8px 0 0;padding-left:20px}
   .side-panel li{padding:3px 0}
 
+  /* ---------- MORE PRODUCTS ---------- */
+  .more-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+  .prod-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;display:flex;flex-direction:column}
+  .prod-card.bundle{border:2px solid var(--teal);box-shadow:var(--shadow)}
+  .prod-card .amt{font-family:"Bricolage Grotesque",sans-serif;font-size:2.4rem;font-weight:800;line-height:1}
+  .prod-card .amt small{font-size:1rem;color:var(--ink-2);font-weight:600}
+  .prod-card .save{display:inline-block;background:var(--amber-soft);color:var(--warn-ink);border:1px solid var(--warn-line);font-size:.82rem;font-weight:700;padding:4px 11px;border-radius:999px;margin-top:10px}
+  @media (prefers-color-scheme: dark){ .prod-card .save{color:var(--amber)} }
+  .prod-card .incl{margin:16px 0 22px}
+  .prod-card .btn{margin-top:auto}
+
   /* ---------- FEES ---------- */
   .fees-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}
   .fees-grid .total-row td{font-weight:800;font-size:1.02rem;border-top:2px solid var(--ink)}
@@ -209,7 +220,7 @@
 
   .sticky-buy{display:none}
   @media (max-width:900px){
-    .hero-grid,.inside-grid,.calc-grid,.price-grid,.setup-grid,.fees-grid{grid-template-columns:1fr}
+    .hero-grid,.inside-grid,.calc-grid,.price-grid,.setup-grid,.fees-grid,.more-grid{grid-template-columns:1fr}
     .grid4{grid-template-columns:1fr 1fr}
     .steps,.policies{grid-template-columns:1fr}
     .hero-grid{padding:40px 0 56px}
@@ -491,6 +502,48 @@
           <li><b>Problem ho to support</b><span>Link na mile ya file na khule to <a href="mailto:support@bmtooliy.com">support@bmtooliy.com</a> par order detail ke saath likho, ya Getvik store page se message karo.</span></li>
         </ul>
         <p class="source-line">Secure checkout Getvik par hota hai — payment confirm hote hi delivery automatic hai, manually kuch bhejne ka wait nahi hai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORE PRODUCTS & BUNDLE ============ -->
+<section id="more-products" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Aur bhi hai</p>
+      <h2>Doosra product aur Bundle</h2>
+      <p>Business OS client jeetne ke <b>baad</b> ka kaam sambhalta hai — invoice, payment, GST. Client Win Kit usse <b>pehle</b> ka kaam hai: proposal, contract aur WhatsApp par baat. Dono chahiye to bundle sasta padta hai.</p>
+    </div>
+    <div class="more-grid">
+      <div class="prod-card">
+        <h3 style="font-size:1.25rem;margin-bottom:6px">Client Win Kit</h3>
+        <p style="color:var(--ink-2);font-size:.95rem">Proposal, Contract &amp; WhatsApp Scripts — India</p>
+        <p class="amt" style="margin-top:16px">₹399 <small>one-time</small></p>
+        <ul class="incl">
+          <li>Proposal template — client ko bhejne ke liye ready format</li>
+          <li>India service agreement (contract) template</li>
+          <li>Pricing calculator + lead tracker sheets</li>
+          <li>30 Hinglish WhatsApp scripts — “kitne ka?”, “mehenga hai”, “discount do” jaise replies ke liye</li>
+          <li>Discovery-call script aur scope-change form</li>
+          <li>50% advance lene ka process, step-by-step guide ke saath</li>
+        </ul>
+        <a class="btn btn-teal" href="https://getvik.com/bmtooliy/product/client-win-kit-proposal-contract-and-whatsapp-scripts-india" target="_blank" rel="noopener" style="width:100%;font-size:1.02rem" aria-label="Buy Client Win Kit on Getvik — ₹399">Buy on Getvik — ₹399</a>
+        <p style="font-size:.85rem;color:var(--ink-2);margin-top:12px">Digital product — payment ke baad download link email par. Contract template general format hai, legal advice nahi.</p>
+      </div>
+      <div class="prod-card bundle">
+        <h3 style="font-size:1.25rem;margin-bottom:6px">Freelancer Bundle</h3>
+        <p style="color:var(--ink-2);font-size:.95rem">Dono products ek saath — Business OS + Client Win Kit</p>
+        <p class="amt" style="margin-top:16px">₹799 <small>one-time</small></p>
+        <span class="save">Alag-alag ₹898 · Bundle me ₹99 ki bachat</span>
+        <ul class="incl">
+          <li><b>Indian Freelancer Business OS</b> (₹499) — clients, GST invoices, UPI, TDS, 30-day Reels calendar</li>
+          <li><b>Client Win Kit</b> (₹399) — proposal, contract, pricing calculator, 30 WhatsApp scripts</li>
+          <li>Client jeetne se lekar invoice aur payment tracking tak — pura flow ek saath</li>
+          <li>Dono packs ka download ek hi order me</li>
+        </ul>
+        <a class="btn btn-amber" href="https://getvik.com/bmtooliy/product/freelancer-bundle-business-os-client-win-kit" target="_blank" rel="noopener" style="width:100%;font-size:1.02rem;color:#231703" aria-label="Buy Freelancer Bundle on Getvik — ₹799">Buy Bundle on Getvik — ₹799</a>
+        <p style="font-size:.85rem;color:var(--ink-2);margin-top:12px">Digital product — payment ke baad dono packs ke download links email par. Koi subscription nahi.</p>
       </div>
     </div>
   </div>
